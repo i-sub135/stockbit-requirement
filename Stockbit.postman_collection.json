@@ -1,0 +1,116 @@
+{
+	"info": {
+		"_postman_id": "1a8e58a9-0811-4e3b-a55d-ffc616676334",
+		"name": "Stockbit",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:6100/index",
+					"host": [
+						"localhost"
+					],
+					"port": "6100",
+					"path": [
+						"index"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Auth",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:6100/auth?name=iyan&phone=089526110020",
+					"host": [
+						"localhost"
+					],
+					"port": "6100",
+					"path": [
+						"auth"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "iyan"
+						},
+						{
+							"key": "phone",
+							"value": "089526110020"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Film list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:6100/film?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MTYyNTM0MTUsIm5hbWUiOiJpeWFuIiwicGhvbmUiOiIwODk1MjYxMTAwMjAifQ.VzwqN5yacW7xGsavlfyH7TQcy78DhvBmksRTFBokVnE&page=1&search=",
+					"host": [
+						"localhost"
+					],
+					"port": "6100",
+					"path": [
+						"film"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MTYyNTM0MTUsIm5hbWUiOiJpeWFuIiwicGhvbmUiOiIwODk1MjYxMTAwMjAifQ.VzwqN5yacW7xGsavlfyH7TQcy78DhvBmksRTFBokVnE"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "search",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "detail Film",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:6100/film/detail?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MTYyNTU4ODYsIm5hbWUiOiJpeWFuIiwicGhvbmUiOiIwODk1MjYxMTAwMjAifQ.QgbqYYvqzk38nVIxAhtR9KBXA4uCgg6D5Xq0CGAMKP4&imdbID=tt0094712",
+					"host": [
+						"localhost"
+					],
+					"port": "6100",
+					"path": [
+						"film",
+						"detail"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MTYyNTU4ODYsIm5hbWUiOiJpeWFuIiwicGhvbmUiOiIwODk1MjYxMTAwMjAifQ.QgbqYYvqzk38nVIxAhtR9KBXA4uCgg6D5Xq0CGAMKP4"
+						},
+						{
+							"key": "imdbID",
+							"value": "tt0094712"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
